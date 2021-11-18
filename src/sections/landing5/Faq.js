@@ -92,9 +92,7 @@ sofrimento e seguir em frente com sua vida.
               <div>
                 <FaqTitle2>Como consigo acessar o e-book, após a compra?</FaqTitle2>
                 <Text variant="small" color="#000" opacity={0.7}>
-                  Create custom landing pages with Omega that converts more
-                  visitors than any website. With lots of unique blocks, you can
-                  easily build a page without any design or custom coding.
+                 Ao comprar seu e-book você conseguirá baixá-lo logo em seguida e poderá desfrutar sua leitura onde e quando quiser..
                 </Text>
               </div>
             </FaqCard>

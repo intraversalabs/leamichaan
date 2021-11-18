@@ -24,7 +24,7 @@ const SliderStyled = styled(Slider)`
       width: 17px;
       height: 8px;
       border-radius: 4px;
-      background-color: ${({ theme }) => theme.colors.shadow};
+      background-color: #fff;
       margin-left: 5px;
       margin-right: 5px;
       transition: 0.5s;

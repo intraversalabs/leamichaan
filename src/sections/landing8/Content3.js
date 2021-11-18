@@ -5,7 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Title, Button, Section, Box, Text } from "../../components/Core";
 import { device } from "../../utils";
 
-import imgContent from "../../assets/image/png/ver03.png";
+import imgContent from "../../assets/image/png/ver04.png";
 
 const ImgContainer = styled(Box)`
   position: absolute;
@@ -15,15 +15,17 @@ const ImgContainer = styled(Box)`
   @media ${device.xl} {
     right: -5%;
   }
+
+ 
 `;
 
 const Content3 = () => {
   return (
     <>
       {/* <!-- Content3 Area --> */}
-      <Section bg="secondary" className="position-relative overflow-hidden">
+      <Section bg="transparent" className="position-relative overflow-hidden">
         <ImgContainer className="d-none d-lg-block">
-          <img src={imgContent} alt="" className="img-fluid" />
+          <img  src={imgContent} alt="" className="img-fluid" />
         </ImgContainer>
         <Container>
           <Row className="">
@@ -45,33 +47,10 @@ const Content3 = () => {
                     visitors than any website. With lots of unique blocks, you
                     can easily build a page without coding.
                   </Text> */}
-                  <div className="d-flex flex-column align-items-start pt-3">
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                
-               
-           
-               
-                
-                
-                
-              
-                  </div>
+                 
                 </Box>
               </div>
+             
             </Col>
             
           </Row>

@@ -7,6 +7,7 @@ import Pricing from "../sections/landing5/Pricing/Pricing";
 import Faq from "../sections/landing5/Faq";
 import Content3 from "../sections/landing8/Content3";
 import PageWrapper from "../components/PageWrapper";
+import VideoCTA from "../sections/landing6/VideoCTA";
 
 const LandingPage5 = () => {
   return (
@@ -16,7 +17,8 @@ const LandingPage5 = () => {
         <Feature />
         <Testimonial />
         <Author />
-        <Content3 />
+        {/* <Content3 /> */}
+        <VideoCTA />
         <Pricing />
         <Faq />
       </PageWrapper>
