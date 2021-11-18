@@ -62,7 +62,7 @@ const Faq = () => (
                 Este e-book é para todos aqueles que estão sofrendo por causa de um amor.
 Independente de qual seja o cenário: pode ser o término de um relacionamento,
 um amor não correspondido ou até mesmo um amor impossível. Este e-book vai
-ajudar as pessoas que estão sofrendo por causa de amor.
+ajudar as pessoas que estão sofrendo por causa de amorr.
                 </Text>
               </div>
             </FaqCard>
