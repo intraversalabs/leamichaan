@@ -24,7 +24,7 @@ const FaqCard = styled(Box)`
     justify-content: center;
     border-radius: 500px;
     position: absolute;
-    margin-top: 20px;
+    margin-top: 0px;
     left: 0;
   }
 `;
