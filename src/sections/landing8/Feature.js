@@ -107,9 +107,9 @@ const Feature2 = () => (
           <Col lg="6" className="mb-4 mb-lg-0 pl-lg-5 order-lg-2">
                 <div>
                   <div id="title2"><Title2>
-                  Aprenda as estratégias mais eficazes da{" "}
+                  Aprenda as estratégias mais eficazes
                   <br className="d-none d-sm-block d-md-none d-xl-block" /> da
-                  se libertar disso, este e-book é para você.
+                  psicologia para superar um amor.
                 </Title2></div>
                 
                 <Text>
@@ -134,8 +134,7 @@ const Feature2 = () => (
             
             
           </Row>
-        <br></br>
-        <br></br>
+        
         <Row className="justify-content-center">
           <Col
             lg="6"
