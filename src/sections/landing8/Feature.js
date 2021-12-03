@@ -1,13 +1,15 @@
 import React from "react";
 import { rgba } from "polished";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Card, CardImg } from "react-bootstrap";
 import img01 from "../../assets/image/svg/icones-03.svg";
 import img02 from "../../assets/image/svg/icones-02.svg";
 import img03 from "../../assets/image/svg/icones-05.svg";
 import img04 from "../../assets/image/svg/icones-04.svg";
 import img05 from "../../assets/image/svg/icones-01.svg";
+import img06 from "../../assets/image/png/562.png";
 
 import { Title, Title2, Section, Box, Text } from "../../components/Core";
+import Section2 from "../../components/Core/Section2";
 
 const ContentCard = ({
   color = "#fff",
@@ -51,9 +53,52 @@ const ContentCard = ({
   </Box>
 );
 
+const FeatureCard = ({
+  color = "#696871",
+  iconName,
+  title,
+  children,
+  ...rest
+}) => (
+  <Box width={"100%"} bg="#696871" p="20px" borderRadius={10} {...rest}>
+    <div className="d-flex justify-content-between align-items-start">
+      <Box
+        size={69}
+        minWidth={69}
+        minHeight={69}
+        borderRadius="50%"
+        color={color}
+        fontSize="28px"
+        className="d-flex justify-content-center align-items-center"
+        mr="20px"
+        css={`
+          background-color: #000
+        `}
+      >
+        <i className={`icon ${iconName}`}></i>
+      </Box>
+      <div>
+        <Text
+          color="heading"
+          as="h3"
+          fontSize={4}
+          fontWeight={500}
+          letterSpacing={-0.75}
+          mb={2}
+        >
+          {title}
+        </Text>
+        <Text fontSize={2} lineHeight={1.75}>
+          {children}
+        </Text>
+      </div>
+    </div>
+  </Box>
+);
+
 const Feature2 = () => (
   <>
-    <Section >
+    <Section2 >
         {/* <Container>
        
         </Container> */}
@@ -62,60 +107,15 @@ const Feature2 = () => (
           <Col lg="6" className="mb-4 mb-lg-0 pl-lg-5 order-lg-2">
                 <div>
                   <div id="title2"><Title2>
-                  Se você está sofrendo por causa de um amor{" "}
-                  <br className="d-none d-sm-block d-md-none d-xl-block" /> e quer
+                  Aprenda as estratégias mais eficazes da{" "}
+                  <br className="d-none d-sm-block d-md-none d-xl-block" /> da
                   se libertar disso, este e-book é para você.
                 </Title2></div>
                 
                 <Text>
                   Você terá em mãos um guia prático de como esquecer um amor e se tornar mais independente emocionalmente.
                 </Text>
-                {/* <WidgetContainer mt={5}>
-                  <Widget title="Domine seus sentimentos" mb={4}></Widget>
-                  <Widget title="Alivie sua dor"mb={4}></Widget>
-                  <Widget title="Liberte-se dos pensamentos que te fazem sofrer"mb={4}></Widget>
-                  <Widget title="Desenvolva independência emocional"mb={4}></Widget>
-                  <Widget title="15 dias de garantia com 100% do seu dinheiro de volta"mb={4}></Widget>
-                </WidgetContainer> */}
-                  {/* <div className="mt-4">
-                  <ContentCard
-                    title="Domine seus sentimentos"
-                    color="primary"
-                    iconName="icon-cards-2"
-                    mb={3}
-                  >
-                  </ContentCard>
-                  <ContentCard
-                    title="Alivie sua dor"
-                    color="primary"
-                    iconName="icon-cards-2"
-                    mb={3}
-                  >
-                  </ContentCard>
-                  <ContentCard
-                    title="Liberte-se dos pensamentos que"
-                    title2="te fazem sofrer"
-                    color="primary"
-                    iconName="icon-cards-2"
-                    mb={3}
-                  >
-                  </ContentCard>
-                  <ContentCard
-                    title="Desenvolva independência emocional"
-                    color="primary"
-                    iconName="icon-cards-2"
-                    mb={3}
-                  >
-                  </ContentCard>
-                  <ContentCard
-                    title="15 dias de garantia com 100% do seu dinheiro"
-                    title2="de volta"
-                    color="primary"
-                    iconName="icon-cards-2"
-                    mb={3}
-                  >
-                  </ContentCard>
-                </div> */}
+               
               </div>
               {/* </div> */}
             </Col>
@@ -127,30 +127,18 @@ const Feature2 = () => (
                 data-aos-once="true"
               > */}
               {/* <iframe src="https://player.vimeo.com/video/593357178?h=a0cf868b9e" width="100%" height="100%" allow="autoplay; fullscreen; picture-in-picture"></iframe> */}
-              <iframe width="100%" height="315" src="https://www.youtube.com/embed/JZwmJKh0V8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <img width="100%" height="100%" src={img06}></img>
               {/* </div> */}
             </Col>
 
             
             
           </Row>
-        {/* <Row className="justify-content-center">
-          <Col lg="9">
-            <Box className="text-center" mb={[4, 5]}>
-              <Title color="light">
-                It’s everything
-                <br />
-                you’ll ever need.
-              </Title>
-            </Box>
-          </Col>
-        </Row> */}
-        <br></br>
         <br></br>
         <br></br>
         <Row className="justify-content-center">
           <Col
-            lg="4"
+            lg="6"
             md="6"
             className="mb-4"
             data-aos="zoom-in"
@@ -165,7 +153,7 @@ const Feature2 = () => (
             />
           </Col>
           <Col
-            lg="4"
+            lg="6"
             md="6"
             className="mb-4"
             data-aos="zoom-in"
@@ -180,7 +168,7 @@ const Feature2 = () => (
             />
           </Col>
           <Col
-            lg="4"
+            lg="6"
             md="6"
             className="mb-4"
             data-aos="zoom-in"
@@ -194,10 +182,8 @@ const Feature2 = () => (
               iconName={img03}
             />
           </Col>
-        </Row>
-        <Row className="justify-content-center">
           <Col
-            lg="4"
+            lg="6"
             md="6"
             className="mb-4"
             data-aos="zoom-in"
@@ -211,71 +197,10 @@ const Feature2 = () => (
               iconName={img04}
             />
           </Col>
-          <Col
-            lg="4"
-            md="6"
-            className="mb-4"
-            data-aos="zoom-in"
-            data-aos-duration="750"
-            data-aos-once="true"
-            data-aos-delay="50"
-          >
-            <ContentCard
-              title="15 dias de garantia com 100% do seu dinheiro de volta"
-              color="primary"
-              iconName={img05}
-            />
-          </Col>
         </Row>
-        {/* <Row className="justify-content-center">
-          <Col
-            lg="4"
-            md="6"
-            className="mb-4"
-            data-aos="zoom-in"
-            data-aos-duration="750"
-            data-aos-once="true"
-            data-aos-delay="50"
-          >
-            <ContentCard
-              title="Rich Documentation"
-              color="secondary"
-              iconName="icon-bookmark-2-2"
-            />
-          </Col>
-          <Col
-            lg="4"
-            md="6"
-            className="mb-4"
-            data-aos="zoom-in"
-            data-aos-duration="750"
-            data-aos-once="true"
-            data-aos-delay="50"
-          >
-            <ContentCard
-              title="Humanly Support"
-              color="success"
-              iconName="icon-voice-recognition-2"
-            />
-          </Col>
-          <Col
-            lg="4"
-            md="6"
-            className="mb-4"
-            data-aos="zoom-in"
-            data-aos-duration="750"
-            data-aos-once="true"
-            data-aos-delay="50"
-          >
-            <ContentCard
-              title="Lifetime Updates"
-              color="primary"
-              iconName="icon-infinite"
-            />
-          </Col>
-        </Row> */}
+       
       </Container>
-    </Section>
+    </Section2>
   </>
 );
 

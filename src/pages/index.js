@@ -8,6 +8,9 @@ import Faq from "../sections/landing5/Faq";
 import Content3 from "../sections/landing8/Content3";
 import PageWrapper from "../components/PageWrapper";
 import VideoCTA from "../sections/landing6/VideoCTA";
+import PostDetails from "../sections/blog/PostDetails";
+import BlogDetails from "./blog-details";
+import Career from "./career";
 
 const LandingPage5 = () => {
   return (
@@ -16,10 +19,12 @@ const LandingPage5 = () => {
         <Hero />
         <Feature />
         <Testimonial />
+        <BlogDetails/>
+        <Career/>
         <Author />
         {/* <Content3 /> */}
         <VideoCTA />
-        <Pricing />
+        {/* <Pricing /> */}
         <Faq />
       </PageWrapper>
     </>

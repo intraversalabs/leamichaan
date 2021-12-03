@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import { Section, Box, Text } from "../../components/Core";
 import styled, { keyframes } from "styled-components";
+import Section2 from "../../components/Core/Section2";
 
 const animRippleOut = keyframes`
     100% {
@@ -43,7 +44,7 @@ const OuterCircle = styled(Box)`
 
 const FeatureCard = ({ color = "primary", title, children, ...rest }) => (
   <Box width={"100%"} bg="light" {...rest}>
-    <div className="d-flex justify-content-between align-items-start">
+    <div className="d-flex justify-content-initial align-items-start">
       <Box
         size={69}
         minWidth={69}
@@ -68,7 +69,7 @@ const FeatureCard = ({ color = "primary", title, children, ...rest }) => (
         >
           {title}
         </Text>
-        <Text fontSize={2} lineHeight={1.75}>
+        <Text variant="test" fontSize={3} lineHeight={1.75}>
           {children}
         </Text>
       </div>
@@ -78,48 +79,77 @@ const FeatureCard = ({ color = "primary", title, children, ...rest }) => (
 
 const Feature = () => (
   <>
-    <Section pt="0!important">
+    <Section2 pt="0!important">
       <Container>
         <Row className="">
           <Col md="6" xl="4" className="mb-5">
-            <FeatureCard color="secondary" title="Work from anywhere">
-              Many of us are able to work from home, a café, or a park whenever
-              we want. Yay freedom!
+            <FeatureCard color="secondary" title="1.">
+            A escolha mais difícil e mais importante que você deve fazer para esquecer um amor.
             </FeatureCard>
           </Col>
           <Col md="6" xl="4" className="mb-5">
-            <FeatureCard color="primary" title="Flexible hours">
-              Many of us are able to work from home, a café, or a park whenever
-              we want. Yay freedom!
+            <FeatureCard color="secondary" title="2.">
+            Quais são os 2 tipos de rejeição amorosa e como não dar bola para eles.
             </FeatureCard>
           </Col>
           <Col md="6" xl="4" className="mb-5">
-            <FeatureCard color="warning" title="Work and travel">
-              Many of us are able to work from home, a café, or a park whenever
-              we want. Yay freedom!
+            <FeatureCard color="secondary" title="3.">
+            Como usar ativamente a nossa atenção quando o objetivo é esquecer.
             </FeatureCard>
           </Col>
           <Col md="6" xl="4" className="mb-5">
-            <FeatureCard color="success" title="Paid parental leave">
-              Many of us are able to work from home, a café, or a park whenever
-              we want. Yay freedom!
+            <FeatureCard color="secondary" title="4.">
+            O sentimento que nos queima por dentro - o ciúme.        
             </FeatureCard>
           </Col>
           <Col md="6" xl="4" className="mb-5">
-            <FeatureCard color="dark" title="Yearly bonuses">
-              Many of us are able to work from home, a café, or a park whenever
-              we want. Yay freedom!
+            <FeatureCard color="secondary" title="5.">
+            Por que é tão difícil esquecer um amor? Na compreensão desta pergunta, reside a superação.
             </FeatureCard>
           </Col>
           <Col md="6" xl="4" className="mb-5">
-            <FeatureCard color="ash" title="Smart salary">
-              Many of us are able to work from home, a café, or a park whenever
-              we want. Yay freedom!
+            <FeatureCard color="secondary" title="6.">
+            Tudo o que você precisa saber, seu corpo já sabe e está tentando te ensinar desde que você nasceu. Você vai se surpreender.
+            </FeatureCard>
+          </Col>
+          <Col md="6" xl="4" className="mb-5">
+            <FeatureCard color="secondary" title="7.">
+            Escolha os sentimentos que te fazem sorrir. 
+            </FeatureCard>
+          </Col>
+          <Col md="6" xl="4" className="mb-5">
+            <FeatureCard color="secondary" title="8.">
+            Precisamos falar novamente sobre o ciúme.
+            </FeatureCard>
+          </Col>
+          <Col md="6" xl="4" className="mb-5">
+            <FeatureCard color="secondary" title="9.">
+            Amor: poderoso para o bem e para o mal. 
+            </FeatureCard>
+          </Col>
+          <Col md="6" xl="4" className="mb-5">
+            <FeatureCard color="secondary" title="10.">
+            Para me relacionar com o outro, a primeira relação que preciso desenvolver é comigo mesmo. Por quê? E como fazemos isso?
+            </FeatureCard>
+          </Col>
+          <Col md="6" xl="4" className="mb-5">
+            <FeatureCard color="secondary" title="11.">
+            Traição. Uma nova perspectiva sobre este assunto polêmico.
+            </FeatureCard>
+          </Col>
+          <Col md="6" xl="4" className="mb-5">
+            <FeatureCard color="secondary" title="12.">
+            Tecnociúme. O ciúme na era digital.
+            </FeatureCard>
+          </Col>
+          <Col md="6" xl="4" className="mb-5">
+            <FeatureCard color="secondary" title="13.">
+            Para me relacionar com o outro, a primeira relação que preciso desenvolver é comigo mesmo. Por quê? E como fazemos isso?
             </FeatureCard>
           </Col>
         </Row>
       </Container>
-    </Section>
+    </Section2>
   </>
 );
 

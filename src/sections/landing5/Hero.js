@@ -1,202 +1,198 @@
 import React from "react";
-import styled from "styled-components";
-import { rgba } from "polished";
 import { Container, Row, Col } from "react-bootstrap";
-import ReviewCard from "../../components/ReviewCard";
-import imgR1 from "../../assets/image/jpeg/reviewer2.jpg";
 
 import { Title, Button, Section, Box, Text, Span } from "../../components/Core";
 
-import { device } from "../../utils";
+import img01 from "../../assets/image/svg/PagamentoSeguro_laranja.svg";
+import img02 from "../../assets/image/svg/acessoimediato_lar.svg";
+import img03 from "../../assets/image/svg/30dias_laranja.svg";
 
-import imgHero from "../../assets/image/png/home_celular01.png";
-import imgAuthor from "../../assets/image/jpeg/l6-author-image.jpg";
 
-const ImgRight = styled(Box)`
-  max-width: 100%;
-  margin-left: 35px;
 
-  #homeImage{
-      
-    width: 600px;
-    height: 700px;
-  }
 
-  
-  @media ${device.sm} {
-    margin-left: -35px;
-    position: relative;
-    left: -35px;
-  }
-  @media ${device.md} {
-    #homeImage{
-      
-  width: 600px;
-  height: 700px;
-}
-    
-  
-    margin-left: 85px;
-    position: relative;
-    left: 35px;
-  }
-`;
+const FeatureCard = ({
+  color = "#fff",
+  iconName,
+  title,
+  children,
+  ...rest
+}) => (
+  <Box width={"100%"} bg="#fff" p="20px" borderRadius={10} {...rest}>
+    <div className="d-flex justify-content-between align-items-start">
+      <Box
+        size={69}
+        minWidth={69}
+        minHeight={69}
+        borderRadius="50%"
+        color={color}
+        fontSize="28px"
+        className="d-flex justify-content-center align-items-center"
+        mr="20px"
+        css={`
+          background-color: #fff
+        `}
+      >
+        <i className={`icon ${iconName}`}></i>
+        <img src={`${iconName}`}></img>
+      </Box>
+      <div>
+        <Text
+          color="heading"
+          as="h3"
+          fontSize={4}
+          fontWeight={500}
+          letterSpacing={-0.75}
+          mb={2}
+        >
+          {title}
+        </Text>
+        <Text fontSize={2} lineHeight={1.75}>
+          {children}
+        </Text>
+      </div>
+    </div>
+  </Box>
+);
 
-const ULStyled = styled.ul`
-  list-style: none;
-  margin: 0;
-  padding-top: 0;
-  padding-left: 0;
-
-  li {
-    &:nth-child(odd) {
-      @media ${device.sm} {
-        margin-right: 40px;
-      }
-    }
-    color: #19191b;
-    font-size: 21px;
-    font-weight: 500;
-    letter-spacing: -0.66px;
-    line-height: 50px;
-    display: flex;
-    margin-bottom: 5px;
-
-    &:before {
-      content: "\f00c";
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
-      display: inline-block;
-      font-size: 13px;
-      width: 30px;
-      min-width: 30px;
-      height: 30px;
-      background-color: ${({ theme }) => rgba(theme.colors.secondary, 0.1)};
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 500px;
-      color: ${({ theme }) => theme.colors.secondary};
-      position: relative;
-      top: 10px;
-      margin-right: 13px;
-    }
-  }
-`;
-
-const BoxStyled = styled(Box)`
-  border-bottom: 1px solid #eae9f2;
-  padding-top: 17px;
-  padding-bottom: 45px;
-
-  @media ${device.md} {
-    padding-top: 90px;
-    padding-bottom: 85px;
-  }
-`;
-
-const AuthorWidget = styled(Box)`
-  display: flex;
-  flex-direction: column;
-
-  @media ${device.sm} {
-    flex-direction: row;
-  }
-
-  @media ${device.lg} {
-    padding-left: 90px;
-    padding-right: 90px;
-  }
-`;
-
-const AuthorImage = styled(Box)`
-  min-width: 111px;
-  max-width: 111px;
-  height: 111px;
-  border-radius: 500px;
-  overflow: hidden;
-`;
-
-const AuthorText = styled(Box)`
-  padding-top: 20px;
-
-  @media ${device.sm} {
-    padding-left: 30px;
-    padding-top: 0px;
-  }
-`;
 
 const Hero = () => {
   return (
     <>
       {/* <!-- Hero Area --> */}
-      <Section bg="#DBDAF5" className="position-relative" pb="30px !important">
-        <div className="pt-5"></div>
+      <Section bg="#DBDAF5" className="position-relative" pb="60px !important">
+
         <Container>
-          <Row className="align-items-center position-relative">
-            <Col
-              lg="8"
-              xl="5"
-              className="position-static"
-              data-aos="fade-right"
-              data-aos-duration="750"
-              data-aos-delay="500"
-              data-aos-once="true"
-            >
-              <ImgRight>
-                <img id="homeImage" src={imgHero} alt="" className="img-fluid" />
-              </ImgRight>
+
+          <Row className="align-items-center">
+          <Col lg="6" md={9} className="order-lg-1">
+              <div id="videocta">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/JZwmJKh0V8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
             </Col>
-            <Col lg="8" xl="7">
+           <Col  lg="6" className="mb-4 mb-lg-0 pl-lg-3 order-lg-2">
               <div
                 data-aos="fade-left"
                 data-aos-duration="750"
                 data-aos-delay="500"
                 data-aos-once="true"
               >
-                <Box pt={[4, null, null, 0]} pl={5}>
+                <Box pt={[4, null, null, 2]} pl={5}>
                   <Title>
-                    Aprenda as estratégias mais eficazes da psicologia <br className="d-none d-sm-block" />
-                    para superar um amor.
+                  Se você está sofrendo por causa de um amor
+                        e quer se libertar disso, <br className="d-none d-sm-block" />
+                         este e-book é para você.
                   </Title>
-                  {/* <Box mb={3}>
-                    <ULStyled>
-                      <li>12 Chapter with detail illustrations</li>
-                      <li>Learn from the expert with 24 years experience</li>
-                      <li>Audio version is included with the purchase</li>
-                    </ULStyled>
-                  </Box> */}
+             
                   <div className="d-flex flex-column align-items-start pt-2">
                     <Button mb={2}>Compre o e-book agora</Button>
-                    {/* <Text fontSize={"18px"} color="ash" fontWeight={500}>
-                      Interested in a free chapter?{" "}
-                      <a href="/" target="blank">
-                        <Span color="secondary">Get it now</Span>
-                      </a>
-                    </Text> */}
                   </div>
                 </Box>
               </div>
             </Col>
+          
+           
+            
           </Row>
+          <br/>
+          <br/>
+          <br/>
+          <Row className="justify-content-center">
+             <Col
+                  md="4"
+                  data-aos="fade-right"
+                  data-aos-duration="750"
+                  data-aos-once="true"
+                  data-aos-delay="50"
+                >
+                  <FeatureCard
+                    color="primary"
+                    iconName={img01}
+                    title="Pagamento seguro"
+                  >
+                    Ambiente seguro. Seus dados estão protegidos e sua compra é 100% segura.
+                  </FeatureCard>
+              </Col>
+
+              <Col
+                  md="4"
+                  data-aos="fade-right"
+                  data-aos-duration="750"
+                  data-aos-once="true"
+                  data-aos-delay="50"
+                >
+                  <FeatureCard
+                    color="primary"
+                    iconName={img02}
+                    title="Acesso imediato"
+                  >
+                    Você receberá o link para download do e-book no seu email, imediatamente após a compra.
+                  </FeatureCard>
+              </Col>
+
+              <Col
+                  md="4"
+                  data-aos="fade-right"
+                  data-aos-duration="750"
+                  data-aos-once="true"
+                  data-aos-delay="50"
+                >
+                  <FeatureCard
+                    color="primary"
+                    iconName={img03}
+                    title="15 dias de garantia"
+                  >
+                    Você terá direito a reembolso de 100% do seu dinheiro dentro deste prazo.
+                  </FeatureCard>
+              </Col>
+
+          {/* <Col
+            lg="4"
+            md="6"
+            className="mb-4"
+            data-aos="zoom-in"
+            data-aos-duration="750"
+            data-aos-once="true"
+            data-aos-delay="50"
+          >
+            <ContentCard
+              title="Domine seus sentimentos"
+              color="primary"
+              iconName={img01}
+            />
+          </Col>
+          <Col
+            lg="4"
+            md="6"
+            className="mb-4"
+            data-aos="zoom-in"
+            data-aos-duration="750"
+            data-aos-once="true"
+            data-aos-delay="50"
+          >
+            <ContentCard
+              title="Alivie sua dor"
+              color="secondary"
+              iconName={img02}
+            />
+          </Col>
+          <Col
+            lg="4"
+            md="6"
+            className="mb-4"
+            data-aos="zoom-in"
+            data-aos-duration="750"
+            data-aos-once="true"
+            data-aos-delay="50"
+          >
+            <ContentCard
+              title="Liberte-se dos pensamentos que te fazem sofrer"
+              color="warning"
+              iconName={img03}
+            />
+          </Col> */}
+        </Row>
         </Container>
       </Section>
-      <BoxStyled bg="#DBDAF5">
-        <Container>
-          <Row className="align-items-center justify-content-center position-relative">
-            <Col lg="12" xl="10">
-                <ReviewCard
-                name="Larissa"
-                company="From Amazon.com"
-                image={imgR1}
-                stars={5}
-              >
-                "Este e-book é um divisor de águas para quem está sofrendo por causa de um amor. <br></br>Uma leitura simples, envolvente, uma jornada para a independência emocional."
-              </ReviewCard>
-            </Col>
-          </Row>
-        </Container>
-      </BoxStyled>
     </>
   );
 };

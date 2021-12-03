@@ -10,13 +10,13 @@ const Career = () => {
   return (
     <>
       <PageWrapper footerDark>
-        <Hero title="Career">
+        {/* <Hero title="Career">
           Create custom landing pages with Omega that converts more visitors
           than any website.
-        </Hero>
+        </Hero> */}
         <Content />
         <Feature />
-        <Roles />
+        {/* <Roles /> */}
       </PageWrapper>
     </>
   );

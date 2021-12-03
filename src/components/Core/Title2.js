@@ -25,8 +25,8 @@ const SectionTitle = styled.h2`
 
   @media ${device.lg} {
     max-width: 1200px;
-    font-size: 48px;
-    line-height: 70px;
+    font-size: 38px;
+    line-height: 45px;
     margin-bottom: 30px;
   }
 

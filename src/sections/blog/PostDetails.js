@@ -10,8 +10,15 @@ const Post = styled(Box)`
   overflow: hidden;
   font-size: 1rem;
 
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
   h2,
-  h3,
   h4,
   h5,
   h6,
@@ -20,6 +27,7 @@ const Post = styled(Box)`
   pre,
   ul,
   ol {
+    font-size: 1.2rem;
     margin-bottom: 1.25rem;
     &:last-child {
       margin-bottom: 0;
@@ -89,62 +97,91 @@ const PostDetails = () => (
     {/* <!-- Blog section --> */}
     <Post>
       <div>
-        <img src={imgB1} alt="" />
-      </div>
-      <div>
         <p>
-          Doubling my 9–5 salary several times in my career is something I never
-          thought would happen. My career went from startup land to call center
-          operator in a short space of time.
+          Prezado leitor que está sofrendo por amor, 
         </p>
         <p>
-          That meant going from six-figures down to the minimum wage in my home
-          country of Australia. And to top it off, I have no degrees in anything
-          business related — unless you count a sound engineering qualification.
+        Sou psicóloga há mais de vinte anos e meu objetivo, desde que escolhi a profissão, sempre foi de ajudar as pessoas a lidarem com o sofrimento emocional. 
         </p>
         <p>
-          If an uneducated guy from the home of the Kangaroo can double their
-          salary, there is definitely hope for you. Popular career websites like
-          “Seek” suggest the typical advice about doing better in your
-          performance review or getting more education from a university. This
-          advice is out of date and I have watched many colleagues fall for this
-          trap and only end up disappointed.
+        Este sofrimento é muitas vezes subestimado, pois, diferente das lesões físicas, não aparenta existir, não causa ferimentos visíveis, nem sangramentos ou hematomas nas vítimas. 
         </p>
+        <h3>No entanto, mesmo sendo um vilão silencioso, a dor emocional é REAL e causa consequências REAIS no corpo, na mente e na vida das pessoas.</h3>
         <p>
-          {" "}
-          Doubling your salary, or at the very least increasing it
-          significantly, is about breaking the norm and trying a few things that
-          are a bit more radical as you’re about to see with these simple tips
-          below.
+        A minha especialidade é cuidar do sofrimento emocional das pessoas e ajudá-las a resolver situações difíceis da vida. 
         </p>
-        <h3>The goal should be more than money</h3>
-        <p>
-          Okay so you can make more money but if that’s your only goal, the
-          extra zeroes on your bank balance will get really boring real quick.
-        </p>
-        <blockquote>
+        {/* <blockquote>
           You can develop side-businesses, side-hustles, and hobbies that can
           supplement your 9–5 income source, and they can all put extra money in
           your pocket that allows you to work less and not stress so much about
           bills.
-        </blockquote>
+        </blockquote> */}
         <p>
-          If an uneducated guy from the home of the Kangaroo can double their
-          salary, there is definitely hope for you. Popular career websites like
-          “Seek” suggest the typical advice about doing better in your
-          performance review or getting more education from a university. This
-          advice is out of date and I have watched many colleagues fall for this
-          trap and only end up disappointed.
+        Durante minha carreira, percebi que uma das situações mais comuns, dolorosas e cruéis que acometiam meus pacientes era quando não podiam viver um amor. 
         </p>
+        <p>
+        A dor que um ser humano sente quando está lidando com a perda de um amor, seja por causa de um término de relacionamento, ou um amor não correspondido, é uma das mais intensas e paralisantes que existe no universo psíquico.
+        </p>
+        <p>
+        É uma dor que influencia todos os aspectos da vida das pessoas, podendo causar crises de ansiedade e depressão, e impactar não só a qualidade de vida, como também a performance profissional e as relações afetivas com familiares e amigos. 
+        </p>
+        <p>
+        Sim, o sofrimento amoroso é um sentimento sério que causa consequências sérias na vida das pessoas.
+        </p>
+        <h3>Mas ele esconde uma oportunidade maravilhosa.</h3>
+        <p>
+        Quando lidamos com as dores de amor de forma madura e inteligente, podemos usar a intensidade do sofrimento a nosso favor e em prol do nosso desenvolvimento. Podemos transformar os sentimentos negativos em impulsos positivos, alavancando nosso estado psíquico e, consequentemente, melhorando nossa qualidade de vida.
+        </p>
+        <p>
+        Os objetivos do meu livro são os seguintes: eliminar os pensamentos tristes que te assolam, acabar com a tua dor emocional e te ensinar a usar sua mente e seus pensamentos para o seu BEM ESTAR e DESENVOLVIMENTO.
+        </p>
+        <p>
+        Este e-book irá te ajudar, não só a aliviar o sofrimento e superar o amor que te faz sofrer, mas também vai te proporcionar mais meios e conhecimentos para viver uma vida melhor, mais gratificante e com mais segurança emocional. 
+        </p>
+        <p>
+        Você merece ser uma pessoa livre, sem prisões mentais, e segura de si e de seus sentimentos. Para isso, é necessário conhecer o funcionamento da sua mente, aprender a dominar seus pensamentos tóxicos e desenvolver a habilidade emocional de ser amiga de si mesma. 
+        </p>
+        <p>
+        Foi para isso que escrevi este e-book. Foi a forma que encontrei para expandir as paredes do meu consultório e chegar até você, que está sofrendo por causa de um amor e não sabe como lidar com a situação.   
+        </p>
+        <p>
+        Já atendi centenas de pacientes que chegaram ao meu consultório com um buraco no coração e que estavam sofrendo muito por causa de amor. Todos saíam das consultas mais aliviados e com mais ferramentas mentais para dominar os sentimentos negativos e superar o amor que os fazia sofrer.
+        </p>
+        <h3>Toda minha experiência e meu conhecimento sobre este assunto foram detalhadas neste e-book.</h3>
+        <p>
+        Estou muito certa de que você vai aprender bastante com o que tenho para compartilhar. Inclusive, para demonstrar o quanto acredito que o e-book irá te ajudar, estou dando 15 dias de Garantia com 100% do seu dinheiro de volta.  
+        </p>
+        <p>
+        Ou seja, você compra o e-book e ganha 15 dias para ler com calma. Se ao final destes 15 dias não sentir que o e-book te ajudou, devolverei 100% do seu dinheiro.
+        </p>
+        <p>
+        O livro vai te ensinar a ter mais domínio sobre a sua mente, para que você não seja escravo dos pensamentos e sentimentos negativos que te assolam. Os pensamentos tóxicos, relacionados ao amor, causam sentimentos tóxicos, como ciúmes, rejeição, inveja, ódio, raiva e ansiedade. Estes sentimentos nos fazem mal. Mas podemos controlá-los com o uso inteligente da mente.
+        </p>
+        <h3>Pode parecer que nossos pensamentos estão fora do nosso controle, mas a verdade é que você tem a capacidade de dominar seus pensamentos, principalmente aqueles que te fazem sofrer.</h3>
+        <p>
+        As pessoas acreditam que são reféns de suas mentes e de seus sentimentos. E isso é verdade até certo ponto. Realmente somos condicionados a permitir que nossa mente esteja fora de nosso domínio. Crescemos com esta crença: nossa mente está fora de nosso controle. 
+        </p>
+        <p>
+        Mas não precisamos viver com nossa mente no piloto automático. Na verdade, não devemos. É fundamental aprendermos a observar nosso fluxo de pensamentos e discernir entre aqueles que nos fazem bem e aqueles que nos intoxicam. 
+        </p>
+        <p>
+        Quando começamos a observar nosso fluxo mental, podemos identificar os pensamentos, as imagens e as ideias que nossa mente gera e depois as emoções que sentimos. Assim, fica claro quais são os pensamentos que causam sentimentos negativos e positivos.  
+        </p>
+        <p>
+        Uma vez que você identifica quais pensamentos que te fazem mal, você pode começar a monitorá-los de perto e realizar um esforço pró ativo para pensar em outras coisas e se ocupar com atividades produtivas. 
+        </p>
+        <p>
+        Desta forma, cada vez que um pensamento negativo entra em cena, você vai condicionar sua mente a trabalhar contra este pensamento, até que sua mente, automaticamente, vai evitá-lo, antes mesmo de você tomar consciência dele. 
+        </p>
+        <p>
+        Este tipo de inteligência emocional é raro e demanda esforço para adquirir. Mas é extremamente poderoso e transforma a vida das pessoas. Quando você tem a capacidade de dominar os pensamentos negativos, você se torna uma pessoa mais segura, livre e independente emocionalmente. E, claro, sofre muito menos.
+        </p>
+        <h3>É o caminho mais eficaz para ser uma pessoa mais plena.</h3>
+        <p>Enfim, te convido a ler o e-book e começar a aprender tudo sobre como superar alguém, dominar sua mente e ser mais companheira de si.</p>
+        <p>Um grande beijo e boa leitura!</p>
+        <p>Léa Michaan</p>
       </div>
     </Post>
-    <Box className="d-flex" mt={4}>
-      <BadgePost>Freelance</BadgePost>
-      <BadgePost>Design</BadgePost>
-      <BadgePost>Earning</BadgePost>
-      <BadgePost>Marketing</BadgePost>
-      <BadgePost>Work</BadgePost>
-    </Box>
   </>
 );
 

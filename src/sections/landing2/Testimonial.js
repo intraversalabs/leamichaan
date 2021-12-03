@@ -14,11 +14,13 @@ import img5Star from "../../assets/image/png/5star.png";
 import img4Star from "../../assets/image/png/4star.png";
 
 import imgR1 from "../../assets/image/jpeg/reviewer1.jpg";
+import Section2 from "../../components/Core/Section2";
 
 const SliderStyled = styled(Slider)`
   .slick-dots {
     position: relative;
-    margin-top: 10px;
+    margin-top:10px;
+    margin-bottom:10px;
     li {
       font-size: 0;
       width: 17px;
@@ -54,7 +56,7 @@ const ContentCard = ({
   children,
   ...rest
 }) => (
-  <Box  height="500px"
+  <Box  height="350px"
     
     bg="light"
     border="1px solid"
@@ -78,7 +80,7 @@ const ContentCard = ({
       />
     </div>
     <br></br>
-    <Text color="dark" mb={4}>
+    <Text variant="small" color="dark" mb={4}>
       {children}
     </Text>
     <Box className={`d-flex justify-content-between`}>
@@ -97,11 +99,11 @@ const ContentCard = ({
 
 const Testimonial = () => {
   const slickSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    arrows: false,
+    arrows: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 2,
     responsive: [
       {
@@ -116,7 +118,7 @@ const Testimonial = () => {
 
   return (
     <>
-      <Section bg="#DBDAF5">
+      <Section2 bg="#DBDAF5">
         <Container>
           <Row className="justify-content-center">
             <Col md="9" lg="6" className="text-center">
@@ -224,7 +226,7 @@ const Testimonial = () => {
             </Col>
           </Row>
         </Container>
-      </Section>
+      </Section2>
     </>
   );
 };

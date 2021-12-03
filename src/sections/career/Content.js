@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 
 import { Title, Section, Box, Text } from "../../components/Core";
+import Section2 from "../../components/Core/Section2";
 
 import GlobalContext from "../../context/GlobalContext";
 import { device } from "../../utils";
@@ -44,30 +45,35 @@ const Content = () => {
 
   return (
     <>
-      <Section>
+      <Section2>
         <Container>
           <Row className="justify-content-center pb-5 mb-5">
-            <Col lg="6">
-              <Title variant="hero" className="mb-0">
+            <Col lg="2">
+              {/* <Title variant="hero" className="mb-0">
                 Watch how we work here.
+              </Title> */}
+            </Col>
+            <Col lg="10">
+              <Title variant="hero" className="mb-0">
+              Um e-book especializado em libertar as pessoas. Confira os capítulos:
               </Title>
             </Col>
-            <Col lg="6" className="pl-lg-5 d-flex align-items-end">
+            {/* <Col lg="6" className="pl-lg-5 d-flex align-items-end">
               <Text>
                 These companies release their own versions of the operating
                 systems with minor changes, and yet always with the same bottom
                 line.
               </Text>
-            </Col>
+            </Col> */}
           </Row>
-          <Box borderRadius={10} className="position-relative overflow-hidden">
+          {/* <Box borderRadius={10} className="position-relative overflow-hidden">
             <img src={imgVideo} alt="" className="img-fluid" />
             <IconButton onClick={openVideoModal}>
               <i className="icon icon-triangle-right-17-2"></i>
             </IconButton>
-          </Box>
+          </Box> */}
         </Container>
-      </Section>
+      </Section2>
     </>
   );
 };

@@ -5,6 +5,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Title, Section, Box, Text, Span } from "../../components/Core";
 import { device } from "../../utils";
 import imgAuthor from "../../assets/image/png/perfil.png";
+import Section2 from "../../components/Core/Section2";
 
 const SectionStyled = styled(Section)``;
 
@@ -24,7 +25,7 @@ const Author = styled(Box)`
 const Fact = () => (
   <>
     {/* <!-- Fact section 1 --> */}
-    <SectionStyled bg="#FFF">
+    <Section2 bg="#FFF">
       <Container>
         <Row>
           <Col xs="12" className="mb-5">
@@ -42,22 +43,23 @@ const Fact = () => (
               <Title variant="card" fontSize="24px">
                 Léa Michaan
               </Title>
-              <Text variant="small" my={4}>
-              Léa é psicóloga clínica, psicanalista, escritora e palestrante. Mestre em
-psicologia clínica, especializada em psicanálise, terapia cognitivo
-comportamental, terapia de casal e psicologia com foco em relacionamento
-humano.Apaixonada por sua família, por sua profissão, pela natureza e pela escrita.
-É convidada regularmente para realizar palestras sobre psicologia, nas quais
-aborda diferentes temas como relacionamento humano, felicidade, superação,
-depressão, ansiedade, angústia e inveja.
+              <Text variant="medium" my={4}>
+              Sou psicóloga clínica, psicanalista, escritora e palestrante. Me especializei em psicologia clínica, psicanálise, terapia cognitivo comportamental, terapia de casal e psicologia com foco em relacionamento humano. Sou apaixonada pela minha família, pela minha profissão, pela natureza e pela escrita. 
               </Text>
-              <Text variant="small">
-              Além disso, Léa é especialista em estratégias psicológicas para desenvolver a
-inteligência emocional das pessoas e estimulá-las a lidar com sentimentos hostis
-e a melhorar o relacionamento do indivíduo consigo mesmo.
-“Meu principal objetivo é auxiliar as pessoas a conhecerem a si mesmas e
-desenvolverem uma relação única, singular e autêntica com o
-mundo, com a vida, com o outro e, principalmente, consigo mesma”.
+              <Text variant="medium" my={4}>
+              Sou convidada regularmente para realizar palestras sobre psicologia, nas quais abordo diferentes temas como relacionamento humano, felicidade, superação, depressão, ansiedade, angústia, ciúme, inveja, etc.
+              </Text>
+              <Text variant="medium" my={4}>
+              Adoro atender meus pacientes no consultório e ajudá-los a lidar com suas dores e questões internas e externas. Minha maior satisfação é ver meus pacientes aliviados e tranquilos após uma sessão. Constatar que aquilo que eu disse os ajudou a encontrar saídas e caminhos para lidarem com as dificuldades, observar que o sofrimento diminui e a esperança aumenta. Esta é a maior gratificação que eu tenho.
+              </Text>
+              <Text variant="medium" my={4}>
+              Em última instância, meu propósito é este: ajudar as pessoas a terem uma vida mais plena e feliz. 
+              </Text>
+              <Text variant="medium" my={4}>
+              E foi por isso que decidi escrever “Como Esquecer Um Grande Amor”. Para expandir as paredes do meu consultório e ajudar aqueles que estão sofrendo.
+              </Text>
+              <Text variant="medium" my={4}>
+              Espero conseguir ajudar o maior número de pessoas a encontrar um pouco de paz no coração.
               </Text>
               {/* <Text variant="small" mt={4}>
                 {" "}
@@ -75,7 +77,7 @@ mundo, com a vida, com o outro e, principalmente, consigo mesma”.
           </Col>
         </Row>
       </Container>
-    </SectionStyled>
+    </Section2>
   </>
 );
 

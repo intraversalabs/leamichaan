@@ -3,11 +3,12 @@ import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 
 import { Title, Section, Box, Text } from "../../components/Core";
+import Section2 from "../../components/Core/Section2";
 
 const SectionStyled = styled(Section)``;
 
 const FaqCard = styled(Box)`
-  padding-left: 55px;
+  padding-left: 85px;
   position: relative;
   &::before {
     content: "\f061";
@@ -51,14 +52,14 @@ const FaqTitle2 = styled(Title)`
 const Faq = () => (
   <>
     {/* <!-- Faq section --> */}
-    <SectionStyled bg="ash">
+    <Section2 bg="ash">
       <Container>
         <Row>
           <Col lg="6" className="mb-5">
             <FaqCard>
               <div>
                 <FaqTitle2 color="#000">Para quem é este e-book?</FaqTitle2>
-                <Text variant="small" color="#000" opacity={0.7}>
+                <Text variant="special" color="#000" opacity={0.7}>
                 Este e-book é para todos aqueles que estão sofrendo por causa de um amor.
 Independente de qual seja o cenário: pode ser o término de um relacionamento,
 um amor não correspondido ou até mesmo um amor impossível. Este e-book vai
@@ -71,7 +72,7 @@ ajudar as pessoas que estão sofrendo por causa de amorr.
             <FaqCard>
               <div>
                 <FaqTitle2>Este e-book vai realmente me ajudar?</FaqTitle2>
-                <Text variant="small" color="#000" opacity={0.7}>
+                <Text variant="special" color="#000" opacity={0.7}>
                 Se o seu objetivo é esquecer e superar um amor, pode ter certeza de que este
 e-book irá te ajudar.
 Sou psicóloga há mais de vinte anos e uma das minhas especialidades é lidar
@@ -91,7 +92,7 @@ sofrimento e seguir em frente com sua vida.
             <FaqCard>
               <div>
                 <FaqTitle2>Como consigo acessar o e-book, após a compra?</FaqTitle2>
-                <Text variant="small" color="#000" opacity={0.7}>
+                <Text variant="special" color="#000" opacity={0.7}>
                  Ao comprar seu e-book você conseguirá baixá-lo logo em seguida e poderá desfrutar sua leitura onde e quando quiser..
                 </Text>
               </div>
@@ -102,7 +103,7 @@ sofrimento e seguir em frente com sua vida.
               <div>
                 <FaqTitle2>Se eu não gostar do e-book, posso devolvê-lo e receber meu dinheiro de
 volta?</FaqTitle2>
-                <Text variant="small" color="#000" opacity={0.7}>
+                <Text variant="special" color="#000" opacity={0.7}>
                 Sim, com certeza! Ao comprar o e-book, você ganha 15 dias de período experimental. Se você não se identificar com o e-book, você pode solicitar o reembolso. Lhe devolveremos o dinheiro e ainda deixaremos que você fique com o e-book. Quem sabe ele não lhe pode ser útil no futuro? :)
                 </Text>
               </div>
@@ -110,7 +111,7 @@ volta?</FaqTitle2>
           </Col>
         </Row>
       </Container>
-    </SectionStyled>
+    </Section2>
   </>
 );
 
