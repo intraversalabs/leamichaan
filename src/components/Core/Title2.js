@@ -6,23 +6,10 @@ import { device } from "../../utils";
 const SectionTitle = styled.h2`
   font-weight: 700;
   letter-spacing: -2.5px;
-  font-size: 40px;
   line-height: 54px;
   margin-bottom: 16px;
 
-  @media ${device.sm} {
-    max-width: 1200px;
-    font-size: 40px;
-    line-height: 62px;
-  }
-
-  @media (min-width: 850px) {
-    max-width: 1000px;
-    font-size: 48px
-    line-height: 70px;
-    margin-bottom: 30px;
-  }
-
+  
   @media ${device.lg} {
     max-width: 1200px;
     font-size: 38px;
@@ -35,6 +22,26 @@ const SectionTitle = styled.h2`
     font-size: 40px;
     line-height: 50px;
     margin-bottom: 30px;
+  }
+
+  @media (min-width: 850px) {
+    max-width: 1000px;
+    font-size: 48px
+    line-height: 70px;
+    margin-bottom: 30px;
+  }
+
+  @media ${device.sm} {
+    max-width: 1200px;
+    font-size: 40px;
+    line-height: 62px;
+  }
+
+  @media ${device.mb} {
+    margin-top: 45px;
+    max-width: 1200px;
+    font-size: 35px;
+    line-height: 42px;
   }
 
 

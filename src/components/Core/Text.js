@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { color, space, typography, shadow } from "styled-system";
+import { device } from "../../utils";
 
 const Paragraph = styled.p`
   margin-bottom: 0;
@@ -12,6 +13,8 @@ const Paragraph = styled.p`
   ${space};
   ${typography};
   ${shadow};
+
+  
 `;
 
 const Paragraph2 = styled.p`
@@ -60,6 +63,36 @@ const ParagraphSmall = styled(Paragraph)`
   ${shadow};
 `;
 
+const ParagraphSmallBox = styled(Paragraph)`
+  font-size: 1px;
+  letter-spacing: -0.5px;
+  line-height: 20px;
+  ${color};
+  ${space};
+  ${typography};
+  ${shadow};
+
+
+
+  @media ${device.xm} {
+    max-width: 1200px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @media ${device.lg} {
+    max-width: 1200px;
+    font-size: 15px;
+    line-height: 17px;
+    margin-top: -25px;
+    margin-bottom: 20px;
+  }
+
+
+  
+  
+`;
+
 const Text = ({ variant, ...props }) => {
   let TextRender;
 
@@ -67,6 +100,9 @@ const Text = ({ variant, ...props }) => {
     case "small":
       TextRender = ParagraphSmall;
       break;
+    case "small-box":
+      TextRender = ParagraphSmallBox;
+      break;  
     case "test":
         TextRender = Paragraph2;
         break;  

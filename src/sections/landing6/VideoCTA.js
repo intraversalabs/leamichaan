@@ -56,7 +56,7 @@ const VideoCTA = () => {
       <Box className="position-relative overflow-hidden">
       
         <img src={imgVideo} alt="" className="w-100 img-fluid" />
-        <IconButton onClick={openVideoModal}>
+        <IconButton>
         <Box>
                   <Title variant="exc" color="light">
                     Comece a ler o e-book, onde e quando quiser. 

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 
-import { Title, Section, Box, Text } from "../../components/Core";
+import { Title, Title2,Section, Box, Text } from "../../components/Core";
 import Section2 from "../../components/Core/Section2";
 
 const SectionStyled = styled(Section)``;
@@ -55,6 +55,11 @@ const Faq = () => (
     <Section2 bg="ash">
       <Container>
         <Row>
+        <Col xs="12" className="mb-5">
+            <div className="text-center">
+              <Title>Perguntas Frequentes</Title>
+            </div>
+          </Col>
           <Col lg="6" className="mb-5">
             <FaqCard>
               <div>

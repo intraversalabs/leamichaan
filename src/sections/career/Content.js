@@ -45,7 +45,7 @@ const Content = () => {
 
   return (
     <>
-      <Section2>
+      <Section2 bg="#DBDAF5">
         <Container>
           <Row className="justify-content-center pb-5 mb-5">
             <Col lg="2">

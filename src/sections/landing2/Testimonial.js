@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 import Slider from "react-slick";
 
-import { Title, Section, Box, Text } from "../../components/Core";
+import { Title, Section, Box, Box3,Text, Title2 } from "../../components/Core";
 import { breakpoints } from "../../utils";
 
 import imgC1 from "../../assets/image/jpeg/l1-customer2.jpg";
@@ -56,8 +56,7 @@ const ContentCard = ({
   children,
   ...rest
 }) => (
-  <Box  height="350px"
-    
+  <Box3  height="340px"
     bg="light"
     border="1px solid"
     borderColor="border"
@@ -80,7 +79,7 @@ const ContentCard = ({
       />
     </div>
     <br></br>
-    <Text variant="small" color="dark" mb={4}>
+    <Text variant="small-box" color="dark" mb={4}>
       {children}
     </Text>
     <Box className={`d-flex justify-content-between`}>
@@ -88,13 +87,13 @@ const ContentCard = ({
         <img src={image} alt="" className="img-fluid" />
       </Box> */}
       <div className="flex-grow-1">
-        <Title variant="card" mb={0}>
+        <Title variant="card-box" mb={0}>
           {name}
         </Title>
         {/* <Text fontSize={2}>{company}</Text> */}
       </div>
     </Box>
-  </Box>
+  </Box3>
 );
 
 const Testimonial = () => {
@@ -123,7 +122,7 @@ const Testimonial = () => {
           <Row className="justify-content-center">
             <Col md="9" lg="6" className="text-center">
               <Box className="text-center">
-                <Title>Depoimentos</Title>
+                <Title2>Depoimentos</Title2>
               </Box>
             </Col>
           </Row>

@@ -3,11 +3,10 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import { Title, Button, Section, Box, Text, Span } from "../../components/Core";
 
-import img01 from "../../assets/image/svg/PagamentoSeguro_laranja.svg";
-import img02 from "../../assets/image/svg/acessoimediato_lar.svg";
-import img03 from "../../assets/image/svg/30dias_laranja.svg";
-
-
+import img01 from "../../assets/image/svg/PagamentoSeguro_roxo.svg";
+import img02 from "../../assets/image/svg/acessoimediato_roxo.svg";
+import img03 from "../../assets/image/svg/30dias_roxo.svg";
+import Box2 from "../../components/Core/Box2";
 
 
 const FeatureCard = ({
@@ -17,7 +16,7 @@ const FeatureCard = ({
   children,
   ...rest
 }) => (
-  <Box width={"100%"} bg="#fff" p="20px" borderRadius={10} {...rest}>
+  <Box2 width={"100%"} bg="#fff" p="20px" borderRadius={10} {...rest}>
     <div className="d-flex justify-content-between align-items-start">
       <Box
         size={69}
@@ -51,7 +50,7 @@ const FeatureCard = ({
         </Text>
       </div>
     </div>
-  </Box>
+  </Box2>
 );
 
 
@@ -59,10 +58,8 @@ const Hero = () => {
   return (
     <>
       {/* <!-- Hero Area --> */}
-      <Section bg="#DBDAF5" className="position-relative" pb="60px !important">
-
+      <Section bg="#DBDAF5" className="position-relative" pb="80px !important">
         <Container>
-
           <Row className="align-items-center">
           <Col lg="6" md={9} className="order-lg-1">
               <div id="videocta">
@@ -89,12 +86,7 @@ const Hero = () => {
                 </Box>
               </div>
             </Col>
-          
-           
-            
           </Row>
-          <br/>
-          <br/>
           <br/>
           <Row className="justify-content-center">
              <Col
@@ -144,53 +136,7 @@ const Hero = () => {
                     Você terá direito a reembolso de 100% do seu dinheiro dentro deste prazo.
                   </FeatureCard>
               </Col>
-
-          {/* <Col
-            lg="4"
-            md="6"
-            className="mb-4"
-            data-aos="zoom-in"
-            data-aos-duration="750"
-            data-aos-once="true"
-            data-aos-delay="50"
-          >
-            <ContentCard
-              title="Domine seus sentimentos"
-              color="primary"
-              iconName={img01}
-            />
-          </Col>
-          <Col
-            lg="4"
-            md="6"
-            className="mb-4"
-            data-aos="zoom-in"
-            data-aos-duration="750"
-            data-aos-once="true"
-            data-aos-delay="50"
-          >
-            <ContentCard
-              title="Alivie sua dor"
-              color="secondary"
-              iconName={img02}
-            />
-          </Col>
-          <Col
-            lg="4"
-            md="6"
-            className="mb-4"
-            data-aos="zoom-in"
-            data-aos-duration="750"
-            data-aos-once="true"
-            data-aos-delay="50"
-          >
-            <ContentCard
-              title="Liberte-se dos pensamentos que te fazem sofrer"
-              color="warning"
-              iconName={img03}
-            />
-          </Col> */}
-        </Row>
+          </Row>
         </Container>
       </Section>
     </>

@@ -14,7 +14,7 @@ const Career = () => {
           Create custom landing pages with Omega that converts more visitors
           than any website.
         </Hero> */}
-        <Content />
+        {/* <Content /> */}
         <Feature />
         {/* <Roles /> */}
       </PageWrapper>

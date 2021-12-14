@@ -12,10 +12,10 @@ import {
   shadow,
 } from "styled-system";
 
-const Box = styled.div`
+const Box2 = styled.div`
   box-sizing: border-box;
   min-width: 0;
-  margin-top: 0px;
+  margin-top: 12px;
   ${color};
   ${space};
   ${layout};
@@ -28,4 +28,4 @@ const Box = styled.div`
   ${shadow};
 `;
 
-export default Box;
+export default Box2;
