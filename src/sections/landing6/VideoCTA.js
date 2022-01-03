@@ -9,7 +9,7 @@ import GlobalContext from "../../context/GlobalContext";
 import { device } from "../../utils";
 
 
-import imgVideo from "../../assets/image/png/ver04.png";
+import imgVideo from "../../assets/image/png/ver04.webp";
 
 const IconButton = styled(Box)`
   cursor: pointer;

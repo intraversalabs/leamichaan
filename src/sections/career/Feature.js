@@ -92,11 +92,11 @@ const ContentCard = ({
   <Box4
     minHeight="150px"
     bg="light"
-    border="1px solid"
+    border="0.1rem solid"
     borderColor="border"
     p="30px"
     mx="20px"
-    borderLeftColor= "#FF9D88"
+    borderLeftColor= "#6f42c1"
     borderLeftWidth="20px"
     borderRadius={10}
     className={`${className}`}

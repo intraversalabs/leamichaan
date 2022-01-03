@@ -72,8 +72,6 @@ const ParagraphSmallBox = styled(Paragraph)`
   ${typography};
   ${shadow};
 
-
-
   @media ${device.xm} {
     max-width: 1200px;
     font-size: 16px;

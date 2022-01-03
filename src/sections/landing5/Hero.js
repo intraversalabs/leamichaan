@@ -63,7 +63,7 @@ const Hero = () => {
           <Row className="align-items-center">
           <Col lg="6" md={9} className="order-lg-1">
               <div id="videocta">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/JZwmJKh0V8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="300px" src="https://www.youtube.com/embed/JZwmJKh0V8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </Col>
            <Col  lg="6" className="mb-4 mb-lg-0 pl-lg-3 order-lg-2">
@@ -76,10 +76,9 @@ const Hero = () => {
                 <Box pt={[4, null, null, 2]} pl={5}>
                   <Title>
                   Se você está sofrendo por causa de um amor
-                        e quer se libertar disso, <br className="d-none d-sm-block" />
-                         este e-book é para você.
+                  e quer se libertar disso, este e-book
+                  é para você.
                   </Title>
-             
                   <div className="d-flex flex-column align-items-start pt-2">
                     <Button mb={2}>Compre o e-book agora</Button>
                   </div>
