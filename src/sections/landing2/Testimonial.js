@@ -44,7 +44,7 @@ const SliderStyled = styled(Slider)`
         }
       }
     }
-  }
+  } 
 `;
 
 const ContentCard = ({
@@ -137,11 +137,26 @@ const Testimonial = () => {
                   `}
                 >
                   <ContentCard
-                    name="Ricardo"
+                    name="Larissa"
                     company="CEO at Creativex"
                     image={imgC1}
                   >
-                    "Obrigado dra. Léa! Mesmo! Você não tem noção de como seu e-book me ajudou a superar minha ex namorada. Estou finalmente seguindo em frente”.
+                    “Este e-book é um divisor de águas para quem está sofrendo por causa de um amor.”
+                  </ContentCard>
+                </Box>
+                <Box
+                  css={`
+                    &:focus {
+                      outline: none;
+                    }
+                  `}
+                >
+                  <ContentCard
+                    name="Ricardo"
+                    company="Digital Marketer, Writer"
+                    image={imgC2}
+                  >
+                    “Obrigado dra. Léa! Mesmo! Você não tem noção de como seu e-book me ajudou a superar minha ex namorada. Estou finalmente seguindo em frente”
                   </ContentCard>
                 </Box>
                 <Box
@@ -153,10 +168,10 @@ const Testimonial = () => {
                 >
                   <ContentCard
                     name="Ana"
-                    company="Digital Marketer, Writer"
-                    image={imgC2}
+                    company="CEO at Creativex"
+                    image={imgC1}
                   >
-                    “Como Esquecer Um Grande Amor me salvou da depressão. Juro, não tenho palavras para agradecer! Depois do término do meu último relacionamento eu estava no fundo do poço. Não conseguia reagir na vida. O livro me mostrou o caminho para a liberdade. E o melhor, descobri que sou capaz de dominar meus sentimentos"
+                    “Como Esquecer Um Grande Amor me salvou da depressão. Juro, não tenho palavras para agradecer! Depois do término do meu último relacionamento eu estava no fundo do poço. Não conseguia reagir na vida. O livro me mostrou o caminho para a liberdade. E o melhor, descobri que sou capaz de dominar meus sentimentos”.
                   </ContentCard>
                 </Box>
                 <Box
@@ -168,8 +183,9 @@ const Testimonial = () => {
                 >
                   <ContentCard
                     name="Pedro"
-                    company="CEO at Creativex"
-                    image={imgC1}
+                    company="Digital Marketer, Writer"
+                    image={imgC2}
+                  
                   >
                     “Este e-book é a bíblia de quem quer esquecer um grande amor.”
                   </ContentCard>
@@ -183,11 +199,11 @@ const Testimonial = () => {
                 >
                   <ContentCard
                     name="Marcela"
-                    stars={4.5}
-                    company="Digital Marketer, Writer"
-                    image={imgC2}
+                    company="CEO at Creativex"
+                    image={imgC1}
+                    stars={4.8}
                   >
-                    “O e-book é extremamente profundo e libertador. Libertador, porque descobri que consigo me libertar da prisão mental dos pensamentos ruins. Indico este livro para quem quiser aprender a dominar seus pensamentos.”
+                    “O e-book é extremamente profundo e libertador. Libertador, porque descobri que consigo me libertar da prisão mental dos pensamentos ruins. Indico este livro para quem quiser aprender a dominar seus pensamentos.” 
                   </ContentCard>
                 </Box>
                 <Box
@@ -199,8 +215,8 @@ const Testimonial = () => {
                 >
                   <ContentCard
                     name="Patrícia"
-                    company="CEO at Creativex"
-                    image={imgC1}
+                    company="Digital Marketer, Writer"
+                    image={imgC2}
                   >
                     “Tudo na vida é percepção, inclusive o sofrimento. O livro da dra. Lea mostra que ao mudar nossa percepção, temos a chance de transformar sofrimento em oportunidade de crescimento. Este é o objetivo maior deste livro: tornar o sofrimento dos leitores em psicologia produtiva. Dou nota mil ao livro da querida Lea!”
                   </ContentCard>
@@ -219,6 +235,67 @@ const Testimonial = () => {
                     image={imgC2}
                   >
                     “O e-Book é tão gostoso de ler. Parece uma sessão de terapia. Uma conversa profunda e reveladora com a dra. Lea.”
+                  </ContentCard>
+                </Box>
+                <Box
+                  css={`
+                    &:focus {
+                      outline: none;
+                    }
+                  `}
+                >
+                  <ContentCard
+                    name="Débora"
+                    company="Digital Marketer, Writer"
+                    image={imgC2}
+                  >
+                    “Como Esquecer Um Grande Amor'' é leitura obrigatória para qualquer um que queira desenvolver suas habilidades emocionais. Ele é libertador e simples de entender.”
+                  </ContentCard>
+                </Box>
+                <Box
+                  css={`
+                    &:focus {
+                      outline: none;
+                    }
+                  `}
+                >
+                  <ContentCard
+                    name="Gabriel"
+                    stars={4.5}
+                    company="Digital Marketer, Writer"
+                    image={imgC2}
+                  >
+                    “O e-book é genial. Além de ajudar quem está sofrendo por causa de um amor, ele ajuda qualquer um que queira desenvolver habilidades emocionais. A humanidade toda deveria lê-lo. Este mundo seria um lugar melhor.”
+                  </ContentCard>
+                </Box>
+                <Box
+                  css={`
+                    &:focus {
+                      outline: none;
+                    }
+                  `}
+                >
+                  <ContentCard
+                    name="Marc"
+                    company="Digital Marketer, Writer"
+                    image={imgC2}
+                  >
+                    “O e-Book “Como Esquecer Um Grande Amor” é mais importante do que qualquer disciplina que tive na escola. Palavra de honra! Para mim, ele é um guia psicológico que me ensinou a lidar com a rejeição e com sentimentos negativos. A dra. Léa é incrível!”.
+                  </ContentCard>
+                </Box>
+                <Box
+                  css={`
+                    &:focus {
+                      outline: none;
+                    }
+                  `}
+                >
+                  <ContentCard
+                    name="Renata"
+                    company="Digital Marketer, Writer"
+                    image={imgC2}
+                  >
+                    “Já sofri muito por amor. Queria ter conhecido este livro na adolescência. Ele resume em pouco mais de 100 páginas, o que demorei anos para aprender.”
                   </ContentCard>
                 </Box>
               </SliderStyled>

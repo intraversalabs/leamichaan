@@ -14,7 +14,6 @@ import imgVideo from "../../assets/image/png/ver04.png";
 const IconButton = styled(Box)`
   cursor: pointer;
   font-size: 22px;
-  
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
