@@ -63,7 +63,7 @@ const Hero = () => {
           <Row className="align-items-center">
           <Col lg="6" md={9} className="order-lg-1">
               <div id="videocta">
-                <iframe width="100%" height="300px" src="https://www.youtube.com/embed/JZwmJKh0V8s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="100%" height="300px" src="https://www.youtube.com/embed/JZwmJKh0V8s" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullscreen></iframe>
               </div>
             </Col>
            <Col  lg="6" className="mb-4 mb-lg-0 pl-lg-3 order-lg-2">
