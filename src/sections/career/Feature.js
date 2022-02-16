@@ -90,7 +90,7 @@ const ContentCard = ({
   ...rest
 }) => (
   <Box4
-    minHeight="150px"
+    minHeight="10px"
     bg="light"
     border="0.1rem solid"
     borderColor="border"

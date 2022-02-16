@@ -35,7 +35,7 @@ const Box4 = styled.div`
   @media ${device.lg} {
     max-width: 1200px;
     font-size: 38px;
-    height: 150px;
+    height: 100px;
     line-height: 45px;
     margin-bottom: 30px;
   }
@@ -43,7 +43,7 @@ const Box4 = styled.div`
   @media ${device.sm} {
     max-width: 1200px;
     font-size: 38px;
-    height: 10px;
+    height: 100px;
     line-height: 45px;
     margin-bottom: 20px;
   }

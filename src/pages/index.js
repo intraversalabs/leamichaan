@@ -24,7 +24,7 @@ const LandingPage5 = () => {
         <Author />
         {/* <Content3 /> */}
         <VideoCTA />
-        {/* <Pricing /> */}
+        <Pricing />
         <Faq />
       </PageWrapper>
     </>
