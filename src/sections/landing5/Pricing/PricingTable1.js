@@ -4,7 +4,7 @@ import { Row, Col } from "react-bootstrap";
 import { ModalProvider, ModalConsumer, ModalRoot} from '@trendmicro/react-modal';
 import Modal from 'react-bootstrap/Modal'
 import Form from 'react-bootstrap/Form'
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 
 import { Text, Box, Button, InputGroup } from "../../../components/Core";
 
@@ -55,7 +55,7 @@ const Pricing = () => {
   const userRef = useRef();
 
   const [show, setShow] = useState(false);
-  const history = useHistory();
+  // const history = useHistory();
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -103,10 +103,10 @@ const Pricing = () => {
     }
 }
 
-const handleCloseTest = async (e) => {
-  e.preventDefault();
-  history.push("https://www.google.com/");
-}
+// const handleCloseTest = async (e) => {
+//   e.preventDefault();
+//   history.push("https://www.google.com/");
+// }
 
 
   return (
