@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Container, Row, Col } from "react-bootstrap";
 
-import { Title, Section, Text } from "../../../components/Core";
+import { Title, Section, Text , Button} from "../../../components/Core";
 
 import PricingTable from "./PricingTable1";
 
