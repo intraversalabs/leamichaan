@@ -4,7 +4,7 @@ import { Row, Col } from "react-bootstrap";
 import { ModalProvider, ModalConsumer, ModalRoot} from '@trendmicro/react-modal';
 import Modal from 'react-bootstrap/Modal'
 import Form from 'react-bootstrap/Form'
-// import { useHistory } from "react-router-dom";
+// import { useNavigate } from 'react-router-dom';
 
 import { Text, Box, Button, InputGroup } from "../../../components/Core";
 
@@ -55,7 +55,7 @@ const Pricing = () => {
   const userRef = useRef();
 
   const [show, setShow] = useState(false);
-  // const history = useHistory();
+  // const navigate = useNavigate();
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -69,17 +69,20 @@ const Pricing = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+        const headers = { 
+          'Content-Type': 'application/json',
+          'Authorization': 'Basic MjRlZjg0ZWEtZDEzZC00ZGFkLThmMTItMTViOGJkMjExYzZjOmM4YzlkNmZlLTliZDktNGRjZC04OWIwLTg1MDNkMjZiYTZhZg=='
+        }
         const response = await axios.post(
-            "http://localhost/ebook/api/create-link?name=" + name + "&email=" + email,
-            "",
+            "https://api.leamichaan.com/ebook/api/create-link?name=" + name + "&email=" + email, "",
             {
-                headers: { 'Content-Type': 'application/json', 'Authorization' : 'Basic YWRtaW46YWRtaW4=' },
-                withCredentials: true
+                headers: headers
             }
         );
         
-        console.log(JSON.stringify(response?.data));
-        console.log(JSON.stringify(response));
+        console.log(JSON.stringify(response?.data.message));
+        window.location.replace(response?.data.message);
+        // console.log(JSON.stringify(response));
         // const accessToken = response?.data?.accessToken;
         // const roles = response?.data?.roles;
         // setAuth({ user, pwd, roles, accessToken });
@@ -103,62 +106,33 @@ const Pricing = () => {
     }
 }
 
-// const handleCloseTest = async (e) => {
-//   e.preventDefault();
-//   history.push("https://www.google.com/");
-// }
-
 
   return (
     <>
       <Row className="justify-content-center">
         <Col lg="4" md="6" sm="8" className="mt-4">
-          {/* <PricingCard>
-            <span className="pre-title">Limited</span>
-            <h2 className="title mb-4">Free</h2>
-            <Text color="dark">
-              Get a free chapter of our<br className="d-none d-sm-block"></br>{" "}
-              book right now.
-            </Text>
-            <Box className="pt-4">
-              <InputGroup
-                placeholder="Email Address"
-                className="text-center"
-                css={`
-                  background: #f7f7fb;
-                  padding: 1rem 1.75rem;
-                `}
-              />
-            </Box>
-            <Box className="mt-auto">
-              <Button width="100%" bg="secondary">
-                Send free chapter
-              </Button>
-            </Box>
-          </PricingCard> */}
         </Col>
         <Col lg="4" md="6" sm="8" className="mt-4">
           <PricingCard>
-            <span className="pre-title">Only eBook</span>
+            <span className="pre-title">Ebook</span>
             <h2 className="title mb-2">R$29</h2>
             <span className="post-title  mb-4">One time purchase</span>
             <Text color="dark">
               Get the eBook version +<br className="d-none d-sm-block"></br>{" "}
-              Audio version of the book.
             </Text>
             <Box className="mt-auto">
               <Button background="#FF5C39" bg="#FF5C39" width="100%" onClick={handleShow}>Compre agora</Button>
             {/* </Box> */}
               <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                  <Modal.Title>Modal heading</Modal.Title>
+                  <Modal.Title>Informe seus dados</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                   <Form>
                     <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                      <Form.Label>Email address</Form.Label>
+                      <Form.Label>Email</Form.Label>
                       <Form.Control
-                         type="text"
+                         type="email"
                          autoComplete="off"
                          onChange={(e) => setEmail(e.target.value)}
                          value={email}
@@ -169,7 +143,7 @@ const Pricing = () => {
                       className="mb-3"
                       controlId="exampleForm.ControlTextarea1"
                     >
-                      <Form.Label>Example textarea</Form.Label>
+                      <Form.Label>Nome Completo</Form.Label>
                       <Form.Control
                          type="text"
                          autoComplete="off"
@@ -181,11 +155,11 @@ const Pricing = () => {
                   </Form>
                 </Modal.Body>
                 <Modal.Footer>
-                  <Button variant="secondary" onClick={handleCloseTest}>
-                    Close
+                  <Button variant="secondary" onClick={handleSubmit}>
+                    Voltar
                   </Button>
                   <Button variant="primary" onClick={handleSubmit}>
-                    Save Changes
+                    Comprar
                   </Button>
                 </Modal.Footer>
               </Modal>

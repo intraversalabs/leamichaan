@@ -5,6 +5,7 @@ import Testimonial from "../sections/landing2/Testimonial";
 import Author from "../sections/landing5/Author";
 import Pricing from "../sections/landing5/Pricing/Pricing";
 import Faq from "../sections/landing5/Faq";
+import Content3 from "../sections/landing8/Content3";
 import PageWrapper from "../components/PageWrapper";
 import VideoCTA from "../sections/landing6/VideoCTA";
 import BlogDetails from "./blog-details";
@@ -20,6 +21,7 @@ const LandingPage5 = () => {
         <BlogDetails/>
         <Career/>
         <Author />
+        {/* <Content3 /> */}
         <VideoCTA />
         <Pricing />
         <Faq />

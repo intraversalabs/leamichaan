@@ -27,11 +27,6 @@ const Pricing = () => {
             <Col md="8" lg="9">
               <div className=" text-center">
                 <Title color="#000">Compre o e-book</Title>
-                {/* <Text color="lightShade">
-                  Create custom landing pages with Omega that converts{" "}
-                  <br className="d-none d-md-block" /> more visitors than any
-                  website.
-                </Text> */}
               </div>
             </Col>
           </Row>
