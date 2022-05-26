@@ -11,7 +11,7 @@ import { Text, Box, Button, InputGroup } from "../../../components/Core";
 const PricingCard = styled.div`
   border-radius: 10px;
   border: 1px solid #eae9f2;
-  min-height: 430px;
+  // min-height: 430px;
   background-color: #fff;
   text-align: center;
   padding-top: 45px;
@@ -86,8 +86,8 @@ const Pricing = () => {
         // const accessToken = response?.data?.accessToken;
         // const roles = response?.data?.roles;
         // setAuth({ user, pwd, roles, accessToken });
-        console.log(email);
-        console.log(name);
+        // console.log(email);
+        // console.log(name);
         setShow(false)
         setEmail('');
         setName('');
@@ -114,14 +114,14 @@ const Pricing = () => {
         </Col>
         <Col lg="4" md="6" sm="8" className="mt-4">
           <PricingCard>
-            <span className="pre-title">Ebook</span>
+            <span className="pre-title">Lea Michaan Ebook</span>
             <h2 className="title mb-2">R$29</h2>
-            <span className="post-title  mb-4">One time purchase</span>
-            <Text color="dark">
+            <span className="post-title  mb-4">Compra Única</span>
+            {/* <Text color="dark">
               Get the eBook version +<br className="d-none d-sm-block"></br>{" "}
-            </Text>
+            </Text> */}
             <Box className="mt-auto">
-              <Button background="#FF5C39" bg="#FF5C39" width="100%" onClick={handleShow}>Compre agora</Button>
+              <Button background="#FF5C39" bg="#FF5C39" width="80%" onClick={handleShow}>Compre agora</Button>
             {/* </Box> */}
               <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>

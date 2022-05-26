@@ -297,7 +297,8 @@ const Header = ({ isDark = false }) => {
             </div>
             <ToggleButton
               className={`navbar-toggler btn-close-off-canvas ml-3 ${
-                gContext.visibleOffCanvas ? "collapsed" : ""
+                // gContext.visibleOffCanvas ? "collapsed" : ""
+                gContext.visibleOffCanvas ? "collapsed" : "collapsed"
               }`}
               type="button"
               data-toggle="collapse"
@@ -305,11 +306,12 @@ const Header = ({ isDark = false }) => {
               aria-controls="mobile-menu"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              display="none"
               onClick={gContext.toggleOffCanvas}
               dark={isDark ? 1 : 0}
             >
               {/* <i className="icon icon-simple-remove icon-close"></i> */}
-              <i className="icon icon-menu-34 icon-burger d-block"></i>
+              {/* <i className="icon icon-menu-34 icon-burger d-block"></i> */}
             </ToggleButton>
           </nav>
         </Container>

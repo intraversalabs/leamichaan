@@ -4,15 +4,15 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import { Title, Button, Section, Text } from "../../components/Core";
 
-import imgContent from "../../assets/image/png/content3-img.png";
+import imgContent from "../../assets/image/png/Artboard2.png";
 
 const SectionStyled = styled(Section)`
-  border-bottom: 1px solid #242427;
+  // border-bottom: 1px solid #242427;
 `;
 
 const Content3 = () => (
   <>
-    <SectionStyled bg="dark">
+    <SectionStyled bg="light">
       <Container>
         <Row className="justify-content-center align-items-center">
           <Col lg="5" className="offset-lg-1 order-lg-2 mb-5 mb-lg-0">
@@ -36,16 +36,14 @@ const Content3 = () => (
             data-aos-once="true"
           >
             <div>
-              <Title color="light">
-                50k+ users are using this landing page.
+              <Title color="dark">
+              15 dias de Garantia com 100% do seu dinheiro de volta
               </Title>
-              <Text color="lightShade">
-                Create custom landing pages with Omega that convert more
-                visitors than any website. With lots of unique blocks, you can
-                easily build a page without coding.
+              <Text color="darkShade">
+              Compre o e-book e ganhe 15 dias para ler com calma. Se em até 15 dias não sentir que o e-book te ajudou, entre em contato conosco no email: xxxxx@xxxxxxx.com e solicite o reembolso do valor investido. Devolveremos 100% do seu dinheiro. 
               </Text>
               <div className="mt-5">
-                <Button>Get Beta Access</Button>
+                <Button>Quero experimentar agora</Button>
               </div>
             </div>
           </Col>

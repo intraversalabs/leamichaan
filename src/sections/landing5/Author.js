@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import { Title, Section, Box, Text, Span } from "../../components/Core";
 import { device } from "../../utils";
-import imgAuthor from "../../assets/image/png/perfil.png";
+import imgAuthor from "../../assets/image/jpeg/selfie.jpg";
 import Section2 from "../../components/Core/Section2";
 
 const SectionStyled = styled(Section)``;
@@ -35,7 +35,7 @@ const Fact = () => (
           </Col>
           <Col lg="4" className="offset-lg-1 mb-4 mb-lg-0">
             <Author>
-              <img width="275" src={imgAuthor} alt="Author" />
+              <img width="305" src={imgAuthor} alt="Author" />
             </Author>
           </Col>
           <Col lg="7" className="pr-lg-5">

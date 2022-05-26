@@ -15,22 +15,23 @@ const SectionStyled = styled(Section)`
 const Pricing = () => {
   return (
     <>
+    {/* <PricingTable /> */}
       {/* <!-- Pricing section --> */}
-      <SectionStyled bg="ash" pt="90px !important" pb="0 !important">
+      <SectionStyled bg="ash" pt="10px !important" pb="0 !important">
         <Container
           className="position-relative"
           css={`
-            z-index: 1;
+            z-index: 0;
           `}
         >
           <Row className="justify-content-center">
-            <Col md="8" lg="9">
+            <Col md="10" lg="10">
               <div className=" text-center">
                 <Title color="#000">Compre o e-book</Title>
               </div>
             </Col>
           </Row>
-          <div className="text-center pt-5">
+          <div className="text-center">
             <PricingTable />
           
           </div>

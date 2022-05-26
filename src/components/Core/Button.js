@@ -16,7 +16,6 @@ const ButtonSolid = styled.button`
   min-width: 200px;
   border-radius: 5px;
   font-size: 21px;
-  margin-left: -40px;
   font-weight: 500;
   letter-spacing: -0.66px;
   display: inline-flex;
