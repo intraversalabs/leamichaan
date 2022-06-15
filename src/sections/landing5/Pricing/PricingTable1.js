@@ -112,6 +112,10 @@ const Pricing = () => {
     <>
       <Row className="justify-content-center">
         <Col lg="4" md="6" sm="8" className="mt-4">
+        <img width="80%" src={img06} alt="Book" />
+        </Col>
+        <Col lg="2" md="6" sm="8" className="mt-4">
+        {/* <img width="80%" src={img06} alt="Book" /> */}
         </Col>
         <Col lg="4" md="6" sm="8" className="mt-4">
           <PricingCard>
