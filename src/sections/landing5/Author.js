@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 import { Title, Section, Box, Text, Span } from "../../components/Core";
 import { device } from "../../utils";
-import imgAuthor from "../../assets/image/jpeg/selfie.jpg";
+import imgAuthor from "../../assets/image/png/001_foto.png";
 import Section2 from "../../components/Core/Section2";
 
 const SectionStyled = styled(Section)``;

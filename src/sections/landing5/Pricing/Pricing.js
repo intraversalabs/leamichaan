@@ -6,8 +6,6 @@ import { Title, Section, Text , Button} from "../../../components/Core";
 
 import PricingTable from "./PricingTable1";
 
-
-
 const SectionStyled = styled(Section)`
   position: relative;
 `;

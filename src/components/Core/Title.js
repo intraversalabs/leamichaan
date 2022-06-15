@@ -104,7 +104,7 @@ const HeroTitle = styled(SectionTitle)`
 const CardTitle = styled.h4`
   font-size: 21px;
   font-weight: 700;
-  letter-spacing: -0.66px;
+  // letter-spacing: -0.66px;
   line-height: 28px;
   
   ${color};

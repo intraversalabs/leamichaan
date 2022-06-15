@@ -1,12 +1,12 @@
 import  React, { useRef, useState, useEffect, useContext } from "react";
 import styled from "styled-components";
-import { Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+import img06 from "../../../assets/image/png/562.png";
 import { ModalProvider, ModalConsumer, ModalRoot} from '@trendmicro/react-modal';
 import Modal from 'react-bootstrap/Modal'
 import Form from 'react-bootstrap/Form'
-// import { useNavigate } from 'react-router-dom';
+import { Title, Text, Section, Box, Button, InputGroup } from "../../../components/Core";
 
-import { Text, Box, Button, InputGroup } from "../../../components/Core";
 
 const PricingCard = styled.div`
   border-radius: 10px;
@@ -104,7 +104,8 @@ const Pricing = () => {
         }
         console.log(err);
     }
-}
+  }
+
 
 
   return (
@@ -115,7 +116,7 @@ const Pricing = () => {
         <Col lg="4" md="6" sm="8" className="mt-4">
           <PricingCard>
             <span className="pre-title">Lea Michaan Ebook</span>
-            <h2 className="title mb-2">R$29</h2>
+            <h2 className="title mb-2">R$29,90</h2>
             <span className="post-title  mb-4">Compra Única</span>
             {/* <Text color="dark">
               Get the eBook version +<br className="d-none d-sm-block"></br>{" "}
@@ -123,9 +124,38 @@ const Pricing = () => {
             <Box className="mt-auto">
               <Button background="#FF5C39" bg="#FF5C39" width="80%" onClick={handleShow}>Compre agora</Button>
             {/* </Box> */}
-              <Modal show={show} onHide={handleClose}>
+            <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                  <Modal.Title>Informe seus dados</Modal.Title>
+            
+                   <Container>
+                      <Row>
+                        <Col xs="12" className="mb-5">
+                          <div className="text-center">
+                          <Title variant="card" fontSize="16px">Preencha as informações abaixo para seguir com a compra do e-book. Pode ficar tranquilo, suas informações são totalmente confidenciais.</Title>
+                          </div>
+                        </Col>
+                          <Col lg="1" className="pr-lg-5">
+                        
+                        </Col>
+                        <Col lg="5" className="offset-lg-1 mb-4 mb-lg-0">
+                          {/* <Author> */}
+                            <img width="100%" src={img06} alt="Book" />
+                          {/* </Author> */}
+                        </Col>
+                        {/* <Col lg="1" className="pr-lg-5">
+                        
+                        </Col> */}
+                        <Col lg="2" className="pr-lg-5">
+                          <div className="author-text">
+                            <Text variant="price" my={4}>
+                            Por R$29,90
+                            </Text>
+                      
+                          </div>
+                        </Col>
+                         
+                      </Row>
+                    </Container>
                 </Modal.Header>
                 <Modal.Body>
                   <Form>
@@ -155,14 +185,11 @@ const Pricing = () => {
                   </Form>
                 </Modal.Body>
                 <Modal.Footer>
-                  <Button variant="secondary" onClick={handleSubmit}>
-                    Voltar
-                  </Button>
                   <Button variant="primary" onClick={handleSubmit}>
                     Comprar
                   </Button>
                 </Modal.Footer>
-              </Modal>
+                </Modal>
             </Box>
           </PricingCard>
         </Col>

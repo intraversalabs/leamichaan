@@ -28,6 +28,18 @@ const Paragraph2 = styled.p`
   ${shadow};
 `;
 
+const Paragraph9 = styled.p`
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: -0.66px;
+  line-height: 25px;
+  ${color};
+  ${space};
+  ${typography};
+  ${shadow};
+`;
+
+
 const Paragraph3 = styled.p`
   font-size: 18px;
   font-weight: 300;
@@ -104,6 +116,9 @@ const Text = ({ variant, ...props }) => {
     case "test":
         TextRender = Paragraph2;
         break;  
+    case "price":
+        TextRender = Paragraph9;
+        break;      
     case "medium":
         TextRender = Paragraph3;
         break;

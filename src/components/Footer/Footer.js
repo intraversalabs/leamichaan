@@ -83,23 +83,28 @@ const Footer = ({ isDark = true }) => {
                 <Row>
                   <Col xs="6" lg="3">
                     <div className="mb-5 mb-lg-4">
-                      <TitleStyled
+                      {/* <TitleStyled
                         variant="card"
                         color={isDark ? "light" : "dark"}
                       >
                         Política de Privacidade
-                      </TitleStyled>
+                      </TitleStyled> */}
                       <UlStyled color={isDark ? "lightShade" : "darkShade"}>
+                      <li>
+                          <a href="/termos-condicoes" target="_blank">
+                          Política de Privacidade
+                          </a>
+                        </li>
                         <li>
-                          <a href="/#" target="_blank">
+                          <a href="/termos-condicoes" target="_blank">
                           Política de devolução e reembolso
                           </a>
                         </li>
-                        <li>
+                        {/* <li>
                           <a id="" href="/#" target="_blank">
                           Redes sociais
                           </a>
-                        </li>
+                        </li> */}
                         <li>
                           <a href="/#" target="_blank">
                           Email de contato
