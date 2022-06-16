@@ -138,7 +138,7 @@ const Content3 = () => {
                         <Col lg="2" className="pr-lg-5">
                           <div className="author-text">
                             <Text variant="price" my={4}>
-                            Por R$19,90
+                            Por R$29,90
                             </Text>
                       
                           </div>

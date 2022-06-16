@@ -6,6 +6,7 @@ import { ModalProvider, ModalConsumer, ModalRoot} from '@trendmicro/react-modal'
 import Modal from 'react-bootstrap/Modal'
 import Form from 'react-bootstrap/Form'
 import { Title, Text, Section, Box, Button, InputGroup } from "../../../components/Core";
+import { device } from "../../../utils";
 
 
 const PricingCard = styled.div`
@@ -43,6 +44,27 @@ const PricingCard = styled.div`
     font-weight: 700;
     letter-spacing: -1.03px;
     line-height: 56px;
+    margin-bottom: 30px;
+  }
+
+  @media ${device.mb} {
+    max-width: 1200px;
+    font-size: 2.2rem;
+    line-height: 35px;
+    margin-left: -20px;
+    margin-right: 10px;
+  }
+
+  @media (min-width: 850px) {
+    max-width: 1000px;
+    font-size: 48px
+    line-height: 70px;
+    margin-bottom: 30px;
+  }
+  @media ${device.lg} {
+    max-width: 1200px;
+    font-size: 35px;
+    line-height: 45px;
     margin-bottom: 30px;
   }
 `;
