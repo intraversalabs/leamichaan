@@ -11,8 +11,9 @@ const Post = styled(Box)`
   font-size: 1rem;
 
   h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1.25rem;
+    font-size: 1.7rem;
+    margin-bottom: 1.26rem;
+    color: #F03F37 !important;
     &:last-child {
       margin-bottom: 0;
     }
@@ -55,8 +56,8 @@ const Post = styled(Box)`
     margin-bottom: 1.25rem;
     padding-left: 50px;
     position: relative;
-    color: ${({ theme }) => theme.colors.text} !important;
-    font-size: 20px;
+    color: #F03F37 !important;
+    font-size: 25px;
     &::after {
       content: url(${iconQuote});
       display: inline-block;
@@ -106,7 +107,7 @@ const PostDetails = () => (
         <p>
         Este sofrimento é muitas vezes subestimado, pois, diferente das lesões físicas, não aparenta existir, não causa ferimentos visíveis, nem sangramentos ou hematomas nas vítimas. 
         </p>
-        <h3>No entanto, mesmo sendo um vilão silencioso, a dor emocional é REAL e causa consequências REAIS no corpo, na mente e na vida das pessoas.</h3>
+        <blockquote>No entanto, mesmo sendo um vilão silencioso, a dor emocional é REAL e causa consequências REAIS no corpo, na mente e na vida das pessoas.</blockquote>
         <p>
         A minha especialidade é cuidar do sofrimento emocional das pessoas e ajudá-las a resolver situações difíceis da vida. 
         </p>
@@ -128,7 +129,7 @@ const PostDetails = () => (
         <p>
         Sim, o sofrimento amoroso é um sentimento sério que causa consequências sérias na vida das pessoas.
         </p>
-        <h3>Mas ele esconde uma oportunidade maravilhosa.</h3>
+        <blockquote>Mas ele esconde uma oportunidade maravilhosa.</blockquote>
         <p>
         Quando lidamos com as dores de amor de forma madura e inteligente, podemos usar a intensidade do sofrimento a nosso favor e em prol do nosso desenvolvimento. Podemos transformar os sentimentos negativos em impulsos positivos, alavancando nosso estado psíquico e, consequentemente, melhorando nossa qualidade de vida.
         </p>
@@ -147,7 +148,7 @@ const PostDetails = () => (
         <p>
         Já atendi centenas de pacientes que chegaram ao meu consultório com um buraco no coração e que estavam sofrendo muito por causa de amor. Todos saíam das consultas mais aliviados e com mais ferramentas mentais para dominar os sentimentos negativos e superar o amor que os fazia sofrer.
         </p>
-        <h3>Toda minha experiência e meu conhecimento sobre este assunto foram detalhadas neste e-book.</h3>
+        <blockquote>Toda minha experiência e meu conhecimento sobre este assunto foram detalhadas neste e-book.</blockquote>
         <p>
         Estou muito certa de que você vai aprender bastante com o que tenho para compartilhar. Inclusive, para demonstrar o quanto acredito que o e-book irá te ajudar, estou dando 15 dias de Garantia com 100% do seu dinheiro de volta.  
         </p>
@@ -157,7 +158,7 @@ const PostDetails = () => (
         <p>
         O livro vai te ensinar a ter mais domínio sobre a sua mente, para que você não seja escravo dos pensamentos e sentimentos negativos que te assolam. Os pensamentos tóxicos, relacionados ao amor, causam sentimentos tóxicos, como ciúmes, rejeição, inveja, ódio, raiva e ansiedade. Estes sentimentos nos fazem mal. Mas podemos controlá-los com o uso inteligente da mente.
         </p>
-        <h3>Pode parecer que nossos pensamentos estão fora do nosso controle, mas a verdade é que você tem a capacidade de dominar seus pensamentos, principalmente aqueles que te fazem sofrer.</h3>
+        <blockquote>Pode parecer que nossos pensamentos estão fora do nosso controle, mas a verdade é que você tem a capacidade de dominar seus pensamentos, principalmente aqueles que te fazem sofrer.</blockquote>
         <p>
         As pessoas acreditam que são reféns de suas mentes e de seus sentimentos. E isso é verdade até certo ponto. Realmente somos condicionados a permitir que nossa mente esteja fora de nosso domínio. Crescemos com esta crença: nossa mente está fora de nosso controle. 
         </p>
@@ -176,7 +177,7 @@ const PostDetails = () => (
         <p>
         Este tipo de inteligência emocional é raro e demanda esforço para adquirir. Mas é extremamente poderoso e transforma a vida das pessoas. Quando você tem a capacidade de dominar os pensamentos negativos, você se torna uma pessoa mais segura, livre e independente emocionalmente. E, claro, sofre muito menos.
         </p>
-        <h3>É o caminho mais eficaz para ser uma pessoa mais plena.</h3>
+        <blockquote>É o caminho mais eficaz para ser uma pessoa mais plena.</blockquote>
         <p>Enfim, te convido a ler o e-book e começar a aprender tudo sobre como superar alguém, dominar sua mente e ser mais companheira de si.</p>
         <p>Um grande beijo e boa leitura!</p>
         <p>Léa Michaan</p>

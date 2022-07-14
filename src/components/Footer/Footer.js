@@ -96,7 +96,7 @@ const Footer = ({ isDark = true }) => {
                           </a>
                         </li>
                         <li>
-                          <a href="/termos-condicoes" target="_blank">
+                          <a href="/politica" target="_blank">
                           Política de devolução e reembolso
                           </a>
                         </li>
