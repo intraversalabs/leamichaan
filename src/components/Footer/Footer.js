@@ -105,11 +105,11 @@ const Footer = ({ isDark = true }) => {
                           Redes sociais
                           </a>
                         </li> */}
-                        <li>
+                        {/* <li>
                           <a href="/#" target="_blank">
                           Email de contato
                           </a>
-                        </li>
+                        </li> */}
                       </UlStyled>
                     </div>
                   </Col>
