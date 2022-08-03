@@ -28,7 +28,7 @@ const Politics = () => {
                 </Text>
                 <br></br>
                 <Text variant="medium">
-                Se em até 15 dias após a compra, não sentir que o e-book te ajudou, entre em contato conosco no email: xxxxx@xxxxxxx.com, envie o seu comprovante de compra e solicite o reembolso do valor investido. 
+                Se em até 15 dias após a compra, não sentir que o e-book te ajudou, entre em contato conosco no email: atendimento@leamichaan.com, envie o seu comprovante de compra e solicite o reembolso do valor investido. 
                 </Text>
                 <br></br>
                 <Text variant="medium">

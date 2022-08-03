@@ -110,7 +110,7 @@ const Content3 = () => {
               15 dias de Garantia com 100% do seu dinheiro de volta
               </Title>
               <Text color="darkShade">
-              Compre o e-book e ganhe 15 dias para ler com calma. Se em até 15 dias não sentir que o e-book te ajudou, entre em contato conosco no email: xxxxx@xxxxxxx.com e solicite o reembolso do valor investido. Devolveremos 100% do seu dinheiro. 
+              Compre o e-book e ganhe 15 dias para ler com calma. Se em até 15 dias não sentir que o e-book te ajudou, entre em contato conosco no email: atendimento@leamichaan.com e solicite o reembolso do valor investido. Devolveremos 100% do seu dinheiro. 
               </Text>
               <div className="mt-5">
                 <Button onClick={handleShow} >Quero experimentar agora</Button>
