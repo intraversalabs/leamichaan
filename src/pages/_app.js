@@ -26,8 +26,22 @@ import "../../node_modules/aos/dist/aos.css";
 import "../assets/fonts/icon-font/css/style.css";
 import "../assets/fonts/typography-font/typo.css";
 import "../assets/fonts/fontawesome-5/css/all.css";
+import { useEffect } from 'react'
 
 const MyApp = ({ Component, pageProps, router }) => {
+  useEffect(() => {
+    import('react-facebook-pixel')
+      .then((x) => x.default)
+      .then((ReactPixel) => {
+        ReactPixel.init('1759720311061991') // facebookPixelId
+        ReactPixel.pageView()
+
+        router.events.on('routeChangeComplete', () => {
+          ReactPixel.pageView()
+        })
+      })
+  }, [router.events])
+
   if (router.pathname.match(/sign|reset|coming/)) {
     return (
       <GlobalProvider>
