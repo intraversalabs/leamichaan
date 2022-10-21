@@ -26,9 +26,15 @@ import "../../node_modules/aos/dist/aos.css";
 import "../assets/fonts/icon-font/css/style.css";
 import "../assets/fonts/typography-font/typo.css";
 import "../assets/fonts/fontawesome-5/css/all.css";
+import TagManager from 'react-gtm-module';
 import { useEffect } from 'react'
 
+
+
 const MyApp = ({ Component, pageProps, router }) => {
+
+ 
+   
   useEffect(() => {
     import('react-facebook-pixel')
       .then((x) => x.default)
@@ -40,6 +46,7 @@ const MyApp = ({ Component, pageProps, router }) => {
           ReactPixel.pageView()
         })
       })
+      TagManager.initialize({ gtmId: 'UA-238857392-1' });  
   }, [router.events])
 
   if (router.pathname.match(/sign|reset|coming/)) {
