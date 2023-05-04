@@ -78,19 +78,19 @@ const Hero = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        const headers = { 
-          'Content-Type': 'application/json',
-          'Authorization': 'Basic MjRlZjg0ZWEtZDEzZC00ZGFkLThmMTItMTViOGJkMjExYzZjOmM4YzlkNmZlLTliZDktNGRjZC04OWIwLTg1MDNkMjZiYTZhZg=='
-        }
-        const response = await axios.post(
-            "https://api.leamichaan.com/ebook/api/create-link?name=" + name + "&email=" + email, "",
-            {
-                headers: headers
-            }
-        );
+        // const headers = { 
+        //   'Content-Type': 'application/json',
+        //   'Authorization': 'Basic MjRlZjg0ZWEtZDEzZC00ZGFkLThmMTItMTViOGJkMjExYzZjOmM4YzlkNmZlLTliZDktNGRjZC04OWIwLTg1MDNkMjZiYTZhZg=='
+        // }
+        // const response = await axios.post(
+        //     "https://api.leamichaan.com/ebook/api/create-link?name=" + name + "&email=" + email, "",
+        //     {
+        //         headers: headers
+        //     }
+        // );
         
-        console.log(JSON.stringify(response?.data.message));
-        window.location.replace(response?.data.message);
+        // console.log(JSON.stringify(response?.data.message));
+        window.location.replace('https://pay.kiwify.com.br/5kB12Zj');
         // console.log(JSON.stringify(response));
         // const accessToken = response?.data?.accessToken;
         // const roles = response?.data?.roles;
